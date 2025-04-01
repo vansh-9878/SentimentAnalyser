@@ -1,7 +1,12 @@
 # 🔍 Sentiment Analysis Chrome Extension
 
 ## 🚀 Overview
-This Chrome extension allows users to **select text on any webpage** and analyze its sentiment using an **API call to a Hugging Face Space**. The extension breaks the selected text into individual lines, finds the **sentiment of each line**, and provides an **overall sentiment score**.
+This Chrome extension allows users to **select text on any webpage** and analyze its sentiment using an **API call to a Hugging Face Space**. The extension breaks the selected text into individual lines, finds the **sentiment of each line**, and provides an **overall sentiment**, which includes :
+- Happiness
+- Sadness
+- Angry
+- Surprise
+- Neutral
 
 ## 🛠 Features
 ✅ Select any text on a webpage
@@ -12,7 +17,7 @@ This Chrome extension allows users to **select text on any webpage** and analyze
 
 ## 📦 Installation
 ### **Manual Installation**
-1. **Download** the extension files from the [GitHub repository](https://github.com/yourusername/your-extension).
+1. **Download** the extension files from the [GitHub repository](https://github.com/vansh-9878/SentimentAnalyser).
 2. Extract the ZIP file to a folder.
 3. Open **Google Chrome** and go to `chrome://extensions/`.
 4. **Enable "Developer mode"** (top-right corner).
@@ -26,11 +31,8 @@ This Chrome extension allows users to **select text on any webpage** and analyze
 4. The extension will analyze each line and display the overall sentiment in an **alert**.
 
 ## 📡 API Integration
-- The extension calls a **Hugging Face Space API** at:
-  ```
-  http://vansh9878-senti.hf.space/predict/{selected_text}
-  ```
-- It sends the selected text and receives **sentiment scores** for each line.
+- The extension calls a **Hugging Face Space API**
+- It sends the selected text and receives **sentiments** for each line.
 - The final output is an **aggregated sentiment result**.
 
 ## 🛑 Known Issues
