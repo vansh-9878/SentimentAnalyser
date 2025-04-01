@@ -1,13 +1,13 @@
 {
     "manifest_version": 3,
     "name": "Sentiment Analyzer",
-    "version": "1.0",
+    "version": "0.5",
     "description": "Select text, click the icon, and process it via an API",
     "permissions": ["activeTab", "storage", "contextMenus"],
     "background": {
       "service_worker": "background.js"
     },
-    "host_permissions": ["http://127.0.0.1:5000/*"],
+    "host_permissions": ["http://vansh9878-senti.hf.space/*"],
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
