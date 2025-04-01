@@ -35,7 +35,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     })
     .then((data) => {
       console.log("API Response:", data);
-      sendResponse({ data: data.result }); // Modify based on actual API response
+      sendResponse({ data: data.sentiment }); // Modify based on actual API response
     })
     .catch((error) => {
       console.error("Fetch error:", error);
